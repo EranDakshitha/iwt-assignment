@@ -13,27 +13,31 @@ body{
     overflow: hidden;
 }
 
-/*Header*/
-
-header {
-    color: #00458B;
-    padding-top: 30px;
-    min-height: 70px;
+.logo {
+    margin-bottom: 50px;
+}
+.container { 
+    width: 1170px;
+    margin: auto;
 }
 
+
 .menu-bar{
-    float: right;
-    text-align: right;
-    margin-top: 70px;
+    background: #99DDFF;
+    margin-top: 10px;
 }
 
 .menu-bar ul{
+    padding: 0;
+    margin: 0;
+    float: right;
     display: inline-flex;
     list-style: none;
 }
 .menu-bar ul li {
-    padding: 0 20px 0 20px;
-    padding-left: 12px;
+    width: 80px;
+    margin: 15px;
+    padding: 15px;
 }
 .menu-bar ul li a {
     color: #3FD2C7;
@@ -45,6 +49,25 @@ header {
 .menu-bar ul li a:hover{
     color: rgb(78, 77, 75);
 }
+.menu-bar ul ul{
+    position: absolute;
+    top: 110px;
+    display: none;
+}
+.menu-bar ul li:hover > ul {
+    display: block;
+}
+.menu-bar ul ul li {
+    width: 80px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+.menu-bar ul ul li a {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
 
 /*About us*/
 .container  {
@@ -83,7 +106,7 @@ ul {
 
 .footer {
     background-color: #faf8f4;
-    padding: 20px 0;
+    padding: 20px 0 20px 0;
     display: block;
 }
 
